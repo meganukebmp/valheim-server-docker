@@ -30,6 +30,6 @@ RUN mkdir valheim_server \
  && steamcmd +login anonymous +force_install_dir /home/steamuser/valheim_server +app_update 896660 validate +quit
 
 VOLUME ["/home/steamuser/valheim_data"]
-EXPOSE 2456-2458
+EXPOSE 2456-2458/udp
 
 ENTRYPOINT ["/entrypoint.sh"]

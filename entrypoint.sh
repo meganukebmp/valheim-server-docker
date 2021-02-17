@@ -5,7 +5,7 @@ export SteamAppId=892970
 
 echo "Starting server PRESS CTRL-C to exit"
 
-/home/steamuser/valheim_server/valheim_server.x86_64 -name "My Server" -port 2456 -world "Dedicated" -password "secret" -savedir "/home/steamuser/valheim_data"
+/home/steamuser/valheim_server/valheim_server.x86_64 -nographics -batchmode -name "My Server" -port 2456 -world "Dedicated" -password "secret" -savedir "/home/steamuser/valheim_data"
 
 # Tip: Make a local copy of this script to avoid it being overwritten by steam.
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
